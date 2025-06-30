@@ -1,0 +1,71 @@
+# ========== JAVA GENEL ==========
+
+# Derlenmiş class dosyaları
+*.class
+
+# Log dosyaları
+*.log
+
+# BlueJ gibi araçlara özel dosyalar
+*.ctxt
+
+# J2ME geçici dosyaları
+.mtj.tmp/
+
+# JVM çökmelerine ait dosyalar
+hs_err_pid*
+replay_pid*
+
+# Paketlenmiş arşiv dosyaları (build artefact)
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+
+# ========== INTELLIJ IDEA ==========
+
+# IntelliJ proje ayarları ve geçici dizinleri
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+
+# ========== GRADLE ==========
+
+# Gradle cache ve build çıktısı
+.gradle/
+build/
+
+# Wrapper dosyaları hariç tutma (gerekliyse koru)
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+!gradlew
+!gradlew.bat
+
+
+# ========== MINECRAFT PLUGIN DOSYALARI ==========
+
+# Plugin config ve kullanıcı verileri (testte oluşanlar)
+plugins/**/config.yml
+plugins/**/data.yml
+plugins/**/userdata/
+plugins/**/logs/
+plugins/**/stats.yml
+
+# Paper test ortamında oluşan test worlds (lokalde test ettiysen)
+testserver/world/
+testserver/world_nether/
+testserver/world_the_end/
+testserver/plugins/
+
+# Geliştirici notu
+# Bu dosya MagEconomy gibi Spigot plugin projeleri için düzenlenmiştir.
+
+# Project exclude paths
+/target/

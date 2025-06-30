@@ -1,0 +1,36 @@
+name: MagEconomy
+version: '1.0-SNAPSHOT'
+main: org.ozaii.magEconomy.MagEconomy
+api-version: '1.21'
+authors: [ ozaii ]
+description: Magnesify sunucu için ozaii tarafından yapılmış web entegreli bir report sistemi.
+website: https://magnesify.com/
+depend:
+  - Vault
+softdepend: [PlaceholderAPI]
+commands:
+  eco:
+    description: Ana economy komutu
+    usage: /<command> [info|admin|help|balance|top]
+    aliases: [economy, money]
+
+permissions:
+  mageconomy.*:
+    description: Tüm MagEconomy yetkilerini verir
+    default: op
+    children:
+      mageconomy.admin: true
+      mageconomy.balance.others: true
+      mageconomy.use: true
+
+  mageconomy.admin:
+    description: Admin komutlarını kullanma yetkisi
+    default: op
+
+  mageconomy.balance.others:
+    description: Başka oyuncuların bakiyesini görme yetkisi
+    default: op
+
+  mageconomy.use:
+    description: Temel economy komutlarını kullanma yetkisi
+    default: true
